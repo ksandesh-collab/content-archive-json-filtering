@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ClaudeCodeEditorTabs">
+    <option name="activeSessionId" value="69aaea76-5c38-4d3b-b72e-863254d4ebfe" />
+    <option name="openSessionIds">
+      <list>
+        <option value="34af148a-2701-4af2-a8b6-5bc1e3b64a69" />
+        <option value="acab4d24-eb87-4636-944e-042da989f984" />
+        <option value="010dcb02-9723-46c8-bace-d355441f40b9" />
+        <option value="69aaea76-5c38-4d3b-b72e-863254d4ebfe" />
+      </list>
+    </option>
+    <option name="sessionPaths">
+      <map>
+        <entry key="010dcb02-9723-46c8-bace-d355441f40b9" value="/sessions/a2305e80-c58a-4357-bee5-06f7b18776ca" />
+        <entry key="34af148a-2701-4af2-a8b6-5bc1e3b64a69" value="/sessions/a2305e80-c58a-4357-bee5-06f7b18776ca" />
+        <entry key="69aaea76-5c38-4d3b-b72e-863254d4ebfe" value="/sessions/new" />
+        <entry key="acab4d24-eb87-4636-944e-042da989f984" value="/sessions/new" />
+      </map>
+    </option>
+    <option name="sessionTitles">
+      <map>
+        <entry key="010dcb02-9723-46c8-bace-d355441f40b9" value="Write a service called PublicationSearchService RE" />
+        <entry key="34af148a-2701-4af2-a8b6-5bc1e3b64a69" value="Write a service called PublicationSearchService RE" />
+        <entry key="69aaea76-5c38-4d3b-b72e-863254d4ebfe" value="Claude Code" />
+        <entry key="acab4d24-eb87-4636-944e-042da989f984" value="Claude Code" />
+      </map>
+    </option>
+  </component>
+</project>

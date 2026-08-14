@@ -1,0 +1,425 @@
+{
+  "data": {
+    "pageInfo": {
+      "currentPageUrl": "/RSX/content-archive/v1/REST/publication/search?responseDetailLevel=STANDARD&pageSize=1",
+      "nextPageUrl": "/RSX/content-archive/v1/REST/publication/search?responseDetailLevel=STANDARD&pageSize=1&pageNumber=2",
+      "pageNumber": 1,
+      "pageSize": 1,
+      "recordCount": 1
+    },
+    "publications": [
+      {
+        "basicInfo": {
+          "createdDateTime": "2026-08-14T20:40:34Z",
+          "deleted": false,
+          "distributionType": "ALL",
+          "emailCoverWordCount": 0,
+          "external": true,
+          "hidden": false,
+          "language": "eng",
+          "legacy": false,
+          "listenTime": 0,
+          "pendingRelease": false,
+          "pubDate": "2026-08-14",
+          "pubId": "6a7f7d42ce691f11f98501e6",
+          "pubSchemaVersion": "1.0",
+          "pubVersion": 1,
+          "pubWordCount": 0,
+          "readingTime": 0,
+          "releasedDateTime": "2026-08-14T20:40:34Z",
+          "source": "ANALYTICS",
+          "sourceId": "A19-2026-08-14",
+          "test": false,
+          "updatedDateTime": "2026-08-14T20:40:34Z",
+          "useNewReleasedTS": true
+        },
+        "distributions": [
+          {
+            "pubVersion": 1,
+            "type": "ALL",
+            "updatedDateTime": "2026-08-14T20:40:34Z"
+          }
+        ],
+        "documents": [
+          {
+            "addClassificationText": false,
+            "addMARTimestamp": false,
+            "aiGenerated": false,
+            "channel": "DOCUMENT",
+            "deleted": false,
+            "docId": "6a7f7d42ce691f11f98501e8",
+            "docSize": 26961,
+            "docTypeId": 0,
+            "mediaType": "application/pdf",
+            "pubId": "6a7f7d42ce691f11f98501e6",
+            "srcFileName": "A19.pdf",
+            "subChannel": "PRIMARY",
+            "titles": [
+              {
+                "language": "eng",
+                "type": "PUBLICATION",
+                "value": "Pass Through Partial Duration Report-20260814"
+              }
+            ],
+            "url": "/RSX/content-archive/REST/document/6a7f7d42ce691f11f98501e8"
+          },
+          {
+            "addClassificationText": false,
+            "addMARTimestamp": false,
+            "aiGenerated": false,
+            "channel": "DOCUMENT",
+            "deleted": false,
+            "docId": "6a7f7d42ce691f11f98501e9",
+            "docSize": 26112,
+            "docTypeId": 0,
+            "mediaType": "application/vnd.ms-excel",
+            "pubId": "6a7f7d42ce691f11f98501e6",
+            "srcFileName": "A19.xls",
+            "subChannel": "SECONDARY",
+            "titles": [
+              {
+                "language": "eng",
+                "type": "PUBLICATION",
+                "value": "Pass Through Partial Duration Report-20260814"
+              }
+            ],
+            "url": "/RSX/content-archive/REST/document/6a7f7d42ce691f11f98501e9"
+          },
+          {
+            "addClassificationText": false,
+            "addMARTimestamp": false,
+            "aiGenerated": false,
+            "channel": "EMAIL",
+            "deleted": false,
+            "docId": "6a7f7d42ce691f11f98501ea",
+            "docSize": 39830,
+            "docTypeId": 0,
+            "mediaType": "text/html",
+            "pubId": "6a7f7d42ce691f11f98501e6",
+            "srcFileName": "emailCover.html",
+            "subChannel": "PRIMARY",
+            "titles": [
+              {
+                "language": "eng",
+                "type": "PUBLICATION",
+                "value": "emailCover.html"
+              }
+            ],
+            "url": "/RSX/content-archive/REST/document/6a7f7d42ce691f11f98501ea"
+          },
+          {
+            "addClassificationText": false,
+            "addMARTimestamp": false,
+            "aiGenerated": false,
+            "channel": "RAW_DATA",
+            "deleted": false,
+            "docId": "6a7f7d42ce691f11f98501eb",
+            "docSize": 944,
+            "docTypeId": 0,
+            "mediaType": "application/json",
+            "pubId": "6a7f7d42ce691f11f98501e6",
+            "srcFileName": "metadata.json",
+            "subChannel": "METADATA",
+            "url": "/RSX/content-archive/REST/document/6a7f7d42ce691f11f98501eb"
+          },
+          {
+            "addClassificationText": false,
+            "addMARTimestamp": false,
+            "aiGenerated": false,
+            "channel": "RAW_DATA",
+            "deleted": false,
+            "docId": "6a7f7d42ce691f11f98501ec",
+            "docSize": 39749,
+            "docTypeId": 0,
+            "mediaType": "text/html",
+            "pubId": "6a7f7d42ce691f11f98501e6",
+            "srcFileName": "emailCover.html",
+            "subChannel": "EMAIL",
+            "url": "/RSX/content-archive/REST/document/6a7f7d42ce691f11f98501ec"
+          },
+          {
+            "addClassificationText": false,
+            "addMARTimestamp": false,
+            "aiGenerated": false,
+            "channel": "WEB",
+            "deleted": false,
+            "docId": "6a7f7d42ce691f11f98501e7",
+            "docSize": 6993,
+            "docTypeId": 0,
+            "mediaType": "image/png",
+            "pubId": "6a7f7d42ce691f11f98501e6",
+            "sourceId": "A19-2026-08-14",
+            "srcFileName": "qrcode.png",
+            "subChannel": "QR_CODE",
+            "titles": [
+              {
+                "language": "eng",
+                "type": "PUBLICATION",
+                "value": "Pass Through Partial Duration Report-20260814"
+              }
+            ],
+            "url": "/RSX/content-archive/REST/document/6a7f7d42ce691f11f98501e7"
+          },
+          {
+            "addClassificationText": false,
+            "addMARTimestamp": false,
+            "aiGenerated": false,
+            "channel": "PRINT",
+            "deleted": false,
+            "docId": "6a7f7d42ce691f11f98501ed",
+            "docSize": 11398,
+            "docTypeId": 0,
+            "mediaType": "text/plain",
+            "pubId": "6a7f7d42ce691f11f98501e6",
+            "sourceId": "A19-2026-08-14",
+            "srcFileName": "6a7f7d42ce691f11f98501e6.txt",
+            "subChannel": "TEXT",
+            "titles": [
+              {
+                "language": "eng",
+                "type": "PUBLICATION",
+                "value": "Pass Through Partial Duration Report-20260814"
+              }
+            ],
+            "url": "/RSX/content-archive/REST/document/6a7f7d42ce691f11f98501ed"
+          },
+          {
+            "addClassificationText": false,
+            "addMARTimestamp": false,
+            "aiGenerated": false,
+            "channel": "RIXML",
+            "deleted": false,
+            "docId": "6a7f7d478a481c5ca21b0b5c",
+            "docSize": 1643,
+            "docTypeId": 0,
+            "mediaType": "text/xml",
+            "pubId": "6a7f7d42ce691f11f98501e6",
+            "sourceId": "A19-2026-08-14",
+            "srcFileName": "6a7f7d42ce691f11f98501e6.xml",
+            "subChannel": "XML",
+            "titles": [
+              {
+                "language": "eng",
+                "type": "PUBLICATION",
+                "value": "Pass Through Partial Duration Report-20260814"
+              }
+            ],
+            "url": "/RSX/content-archive/REST/document/6a7f7d478a481c5ca21b0b5c"
+          }
+        ],
+        "multimedia": [],
+        "pubSeriesInfo": [
+          {
+            "analystBookshelf": false,
+            "assetClassInfo": {
+              "assetClass": {
+                "id": 66,
+                "name": "Securitization - Analytics",
+                "status": "ACTIVE"
+              },
+              "assetClassGroup": {
+                "id": 3,
+                "name": "Non-Research",
+                "status": "ACTIVE"
+              },
+              "assetClassSubGroup": {
+                "id": 7,
+                "name": "Analytics",
+                "status": "ACTIVE"
+              },
+              "subAssetClass": {
+                "id": 107,
+                "name": "US MBS - Analytics",
+                "status": "ACTIVE"
+              }
+            },
+            "debtRestricted": true,
+            "displayName": "Pass Through Partial Duration Report",
+            "frequency": {
+              "code": "AD",
+              "name": "Ad-Hoc",
+              "status": "ACTIVE"
+            },
+            "id": 556,
+            "language": {
+              "code": "eng",
+              "name": "English",
+              "status": "ACTIVE"
+            },
+            "name": "Pass Through Partial Duration Report",
+            "productInfo": {
+              "product": {
+                "id": 2601417,
+                "name": "Analytics Securitization",
+                "status": "ACTIVE"
+              },
+              "productGroup": {
+                "id": 2594060,
+                "name": "Analytics Reports",
+                "status": "ACTIVE"
+              },
+              "productSubGroup": {
+                "id": 2594071,
+                "name": "Analytics Reports"
+              }
+            },
+            "pubSeriesGroup": {
+              "barclaysLiveUrl": "/BU/research/content/analytics-archive-page?headerTitle=Partial+Duration&pubSeriesGroupId=1120 \t",
+              "featuredImageUrl": "",
+              "id": 1120,
+              "isFeatured": false,
+              "isOnboardingQuizDefault": false,
+              "name": "Partial Duration",
+              "regions": [],
+              "status": "ACTIVE"
+            },
+            "status": "INACTIVE"
+          }
+        ],
+        "pubTypeInfo": [
+          {
+            "archive": 0,
+            "debtRestricted": 1,
+            "groupInfo": {
+              "department": {
+                "id": 136,
+                "name": "Analytics Securitisation - US MBS"
+              },
+              "group": {
+                "id": 3,
+                "name": "FI"
+              },
+              "tagbyGroupId": 3
+            },
+            "highGrade": 0,
+            "highYield": 0,
+            "hnwRestricted": 1,
+            "id": 4047,
+            "language": {
+              "code": "eng",
+              "name": "English",
+              "status": "ACTIVE"
+            },
+            "name": "BC-Pass Through Partial Duration Report",
+            "productInfo": {
+              "product": {
+                "id": 2601417,
+                "name": "Analytics Securitization"
+              },
+              "productGroup": {
+                "id": 2594060,
+                "name": "Analytics Reports"
+              },
+              "productSubGroup": {
+                "id": 2594071,
+                "name": "Analytics Reports"
+              },
+              "subProduct": {
+                "id": 0,
+                "name": ""
+              }
+            },
+            "reportType": 0
+          }
+        ],
+        "pubUrlInfo": {
+          "emailCoverUrl": "/RSX/content-archive/REST/document/6a7f7d42ce691f11f98501ea",
+          "linkBackUrl": "https://live.barcap.com/go/publications/link?contentPubID=FC6a7f7d42ce691f98501e6&restriction=DEBT",
+          "offlineUrl": "/RSX/content-archive/v1/REST/document/search?pubId=6a7f7d42ce691f11f98501e6&contentType=offline",
+          "primaryContentType": "application/pdf",
+          "primaryContentUrl": "/RSX/content-archive/REST/document/6a7f7d42ce691f11f98501e8",
+          "primaryDocumentUrl": "/RSX/content-archive/REST/document/6a7f7d42ce691f11f98501e8",
+          "textUrl": "/RSX/content-archive/REST/document/6a7f7d42ce691f11f98501ed",
+          "viewerUrl": "/PRC_S/html-renderer/v1/html/documentViewer.html?pubId=6a7f7d42ce691f11f98501e6"
+        },
+        "tags": [
+          {
+            "code": "42647",
+            "detail": {
+              "email": "BarCapReports@barclays.com",
+              "id": 42647,
+              "imageUrl": "https://live.barcap.com/publiccp/RUD/nophoto.jpg",
+              "lbCode": "LB05812",
+              "mappings": {
+                "affiliates": [],
+                "assetClassGroups": [
+                  3
+                ],
+                "assetClasses": [
+                  22
+                ],
+                "conflictOfInterest": "N/A",
+                "countries": [],
+                "coverageNameOverride": "",
+                "coverageRegions": [],
+                "coverages": [],
+                "entitlementAccessGroups": [],
+                "extRegions": [],
+                "externalAttr": [],
+                "languages": [],
+                "lastPubDate": "",
+                "products": [],
+                "refProducts": [],
+                "refSubProducts": [],
+                "sec_15a6_exemption": "N/A",
+                "sectors": [],
+                "subAssetClasses": [],
+                "subProducts": []
+              },
+              "name": "Barclays Analytics ",
+              "regionId": 14,
+              "status": "ACTIVE",
+              "thumbnailUrl": "https://live.barcap.com/publiccp/RUD/nophoto_thumb.jpg",
+              "userType": "generic"
+            },
+            "internal": false,
+            "type": "ANALYST"
+          },
+          {
+            "code": "true",
+            "internal": false,
+            "type": "EXCLUDE_FROM_SCORECARD"
+          },
+          {
+            "code": "false",
+            "internal": false,
+            "type": "SOURCE_DOCVIEW"
+          },
+          {
+            "code": "false",
+            "internal": false,
+            "type": "VENDOR_DENY"
+          }
+        ],
+        "titles": [
+          {
+            "language": "eng",
+            "type": "PUBLICATION",
+            "value": "Pass Through Partial Duration Report-20260814"
+          },
+          {
+            "language": "eng",
+            "type": "L1",
+            "value": "Analytics"
+          },
+          {
+            "language": "eng",
+            "type": "L2",
+            "value": "Pass Through Partial Duration Report-20260814"
+          }
+        ]
+      }
+    ],
+    "userInfo": {
+      "bclId": "kamatsan",
+      "languages": [
+        "ENG"
+      ]
+    }
+  },
+  "status": {
+    "processTimeInMillis": 5,
+    "requestId": "kQeagU-00691682",
+    "status": "SUCCESS"
+  }
+}
