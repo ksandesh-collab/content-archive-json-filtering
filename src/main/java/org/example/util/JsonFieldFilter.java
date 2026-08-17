@@ -92,7 +92,7 @@ public final class JsonFieldFilter {
                 current.append(c);
             }
         }
-        if (!current.isEmpty()) {
+        if (current.length() > 0) {
             segments.add(current.toString());
         }
         return segments;
@@ -167,14 +167,14 @@ public final class JsonFieldFilter {
         if (expected == null) {
             return false;
         }
-        if (expected instanceof String s) {
-            return actual.isTextual() && actual.asText().equals(s);
+        if (expected instanceof String) {
+            return actual.isTextual() && actual.asText().equals(expected);
         }
-        if (expected instanceof Boolean b) {
-            return actual.isBoolean() && actual.asBoolean() == b;
+        if (expected instanceof Boolean) {
+            return actual.isBoolean() && actual.asBoolean() == (Boolean) expected;
         }
-        if (expected instanceof Double d) {
-            return actual.isNumber() && actual.asDouble() == d;
+        if (expected instanceof Double) {
+            return actual.isNumber() && actual.asDouble() == (Double) expected;
         }
         return actual.asText().equals(String.valueOf(expected));
     }
@@ -185,7 +185,17 @@ public final class JsonFieldFilter {
         Predicate predicate;
     }
 
-    private record Predicate(List<String> attributePath, String operator, Object expectedValue) {
+    private static final class Predicate {
+        private final List<String> attributePath;
+        private final String operator;
+        private final Object expectedValue;
+
+        Predicate(List<String> attributePath, String operator, Object expectedValue) {
+            this.attributePath = attributePath;
+            this.operator = operator;
+            this.expectedValue = expectedValue;
+        }
+
         boolean test(JsonNode element) {
             JsonNode actual = element;
             for (String segment : attributePath) {
