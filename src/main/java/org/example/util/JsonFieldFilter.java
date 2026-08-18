@@ -4,6 +4,8 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -37,6 +39,8 @@ import java.util.regex.Pattern;
  */
 public final class JsonFieldFilter {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(JsonFieldFilter.class);
+
     private static final Pattern SEGMENT_PATTERN = Pattern.compile("^([A-Za-z0-9_]+)(?:\\[\\?\\((.*)\\)\\])?$");
     private static final Pattern PREDICATE_PATTERN = Pattern.compile("^@\\.([A-Za-z0-9_.]+)\\s*(==|!=)\\s*(.+)$");
 
@@ -47,7 +51,13 @@ public final class JsonFieldFilter {
         if (fieldPaths == null || fieldPaths.isEmpty()) {
             return source;
         }
-        return applyTree(source, buildFieldTree(fieldPaths));
+        long startNanos = System.nanoTime();
+        try {
+            return applyTree(source, buildFieldTree(fieldPaths));
+        } finally {
+            long elapsedMillis = (System.nanoTime() - startNanos) / 1_000_000;
+            LOGGER.info("JSON field filtering completed in {} ms for {} field path(s)", elapsedMillis, fieldPaths.size());
+        }
     }
 
     private static FieldNode buildFieldTree(List<String> fieldPaths) {
