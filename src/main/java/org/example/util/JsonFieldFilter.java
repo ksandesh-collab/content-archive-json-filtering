@@ -27,6 +27,13 @@ import java.util.regex.Pattern;
  * left-hand side ({@code @.someField} or {@code @.nested.field}) is
  * evaluated against each array element, and the right-hand side is a
  * quoted string, a number, {@code true}/{@code false}, or {@code null}.
+ * <p>
+ * If multiple requested paths apply different predicates to the same array
+ * field (e.g. {@code tags[?(@.type == 'ANALYST')]} and
+ * {@code tags[?(@.type == 'COVER_ANALYST')]}), the predicates are combined
+ * with OR semantics: an element is kept if it matches any of them. If any
+ * path references that field with no predicate at all, every element is
+ * kept, since an unconditional request is broader than any predicate.
  */
 public final class JsonFieldFilter {
 
@@ -57,7 +64,9 @@ public final class JsonFieldFilter {
                 }
                 current = current.children.computeIfAbsent(matcher.group(1), key -> new FieldNode());
                 if (matcher.group(2) != null) {
-                    current.predicate = parsePredicate(matcher.group(2), rawPath);
+                    current.predicates.add(parsePredicate(matcher.group(2), rawPath));
+                } else {
+                    current.matchAll = true;
                 }
             }
         }
@@ -133,7 +142,7 @@ public final class JsonFieldFilter {
         if (source.isArray()) {
             ArrayNode result = JsonNodeFactory.instance.arrayNode();
             for (JsonNode element : source) {
-                if (node.predicate != null && !node.predicate.test(element)) {
+                if (!node.matches(element)) {
                     continue;
                 }
                 JsonNode filteredElement = applyTree(element, node);
@@ -179,10 +188,27 @@ public final class JsonFieldFilter {
         return actual.asText().equals(String.valueOf(expected));
     }
 
-    /** Node in the requested-fields tree; a non-null predicate only applies when the matching JSON value is an array. */
+    /**
+     * Node in the requested-fields tree. The predicates, if any, only apply when the matching JSON
+     * value is an array; they are OR'd together, but {@code matchAll} (set when some path referenced
+     * this field with no predicate at all) overrides them and keeps every element.
+     */
     private static final class FieldNode {
         final Map<String, FieldNode> children = new LinkedHashMap<>();
-        Predicate predicate;
+        final List<Predicate> predicates = new ArrayList<>();
+        boolean matchAll;
+
+        boolean matches(JsonNode element) {
+            if (matchAll || predicates.isEmpty()) {
+                return true;
+            }
+            for (Predicate predicate : predicates) {
+                if (predicate.test(element)) {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 
     private static final class Predicate {
